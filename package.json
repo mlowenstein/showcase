@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run dev",
+    "dev": "ng serve --open",
+    "startup": "npm run local",
+    "local": "ng serve --open --ssl true --ssl-key util/ssl/server.key --ssl-cert util/ssl/server.crt",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

@@ -30,7 +30,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "util/libs/hammer.min.js",
+              "util/libs/moment.min.js"
+            ]
           },
           "configurations": {
             "production": {
