@@ -1,4 +1,13 @@
 import {
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import {
+  NotificationComponent,
+  NotificationService,
+} from './notification';
+
+import {
   AboutComponent,
 } from './about';
 import {
@@ -14,11 +23,11 @@ import {
   FooterComponent,
 } from './footer';
 import {
-  FormsModule,
-} from '@angular/forms';
-import {
   HeaderComponent,
 } from './header';
+import {
+  LoaderComponent,
+} from './loader';
 import {
   LoginComponent,
 } from './login';
@@ -55,6 +64,9 @@ import {
     FooterComponent,
     HeaderComponent,
     LoginComponent,
+    LoaderComponent,
+    NotificationComponent,
+    PortfolioComponent,
     ProjectsComponent,
     ReferencesComponent,
     SkillsComponent,
@@ -63,6 +75,7 @@ import {
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
   ],
   exports: [
@@ -71,13 +84,21 @@ import {
     ExperienceComponent,
     FooterComponent,
     HeaderComponent,
+    LoaderComponent,
     LoginComponent,
+    NotificationComponent,
+    PortfolioComponent,
     ProjectsComponent,
     ReferencesComponent,
     SkillsComponent,
     WelcomeComponent,
   ],
+  entryComponents: [
+    LoaderComponent,
+    NotificationComponent,
+  ],
   providers: [
+    NotificationService,
     PortfolioService,
   ]
 })

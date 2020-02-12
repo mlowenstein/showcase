@@ -1,0 +1,8 @@
+<div class="overlay" *ngIf="active">
+  <h3 *ngIf="!respond" class="on-msg">{{message}}</h3>
+  <button *ngIf="respond" (click)="refresh()" mat-raised-button class="action">{{message}}</button>
+  <div class="loader"></div>
+</div>
+<div class="overlay" *ngIf="!active">
+  <h3 class="off-msg">{{message}}</h3>
+</div>

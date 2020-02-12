@@ -8,14 +8,6 @@ import {
   Routes,
 } from '@angular/router';
 import {
-  FormsModule,
-  ReactiveFormsModule
-} from '@angular/forms';
-import {
-  HTTP_INTERCEPTORS,
-  HttpClientModule,
-} from '@angular/common/http';
-import {
   HashLocationStrategy,
   LocationStrategy
 } from '@angular/common';
@@ -23,9 +15,6 @@ import {
 import {
   AppComponent,
 } from './app.component';
-import {
-  AppRoutingModule,
-} from './app-routing.module';
 import {
   BrowserAnimationsModule,
 } from '@angular/platform-browser/animations';
@@ -36,6 +25,9 @@ import {
   FlexLayoutModule,
 } from '@angular/flex-layout';
 import {
+  HttpClientModule,
+} from '@angular/common/http';
+import {
   NgHttpLoaderModule,
 } from 'ng-http-loader';
 import {
@@ -45,14 +37,20 @@ import {
   OAuthModule,
 } from 'angular-oauth2-oidc';
 import {
+  PortfolioComponent,
+} from './portfolio/portfolio.component';
+import {
+  PortfolioModule,
+} from './portfolio/portfolio.module';
+import {
   adapterFactory,
 } from 'angular-calendar/date-adapters/date-fns';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: PortfolioModule,
-  // }
+  {
+    path: '',
+    component: PortfolioComponent,
+  }
 ];
 
 const config: ExtraOptions = {
@@ -67,8 +65,7 @@ const config: ExtraOptions = {
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, config),
-    FormsModule,
-    ReactiveFormsModule,
+    PortfolioModule,
     HttpClientModule,
     FlexLayoutModule,
     NgHttpLoaderModule,
@@ -80,11 +77,6 @@ const config: ExtraOptions = {
   ],
   providers: [
     AppComponent,
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: RequestInterceptor,
-    //   multi: true
-    // },
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy

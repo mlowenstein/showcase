@@ -1,0 +1,36 @@
+<div *ngIf="source" class="container">
+  <ng-container *ngFor="let note of source.notifications.reverse()">
+    <div class="element" [@notifyme]="'show'" (click)="source.destroy(note)">
+      <ng-container [ngSwitch]="note.type">
+        <ng-container *ngSwitchCase="1">
+          <span class="level" [ngClass]="{
+            'success-type': note.type == 1
+          }" (click)="source.destroy(note)">
+          <mat-icon>done</mat-icon>
+          </span>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+          <span class="level" [ngClass]="{
+            'error-type': note.type == 2
+          }" (click)="source.destroy(note)">
+          <mat-icon>report</mat-icon>
+          </span>
+        </ng-container>
+        <ng-container *ngSwitchCase="3">
+          <span class="level" [ngClass]="{
+            'info-type': note.type == 3
+          }" (click)="source.destroy(note)">
+          <mat-icon>info</mat-icon>
+          </span>
+        </ng-container>
+      <span *ngIf="note.entity !== null"
+        class="entity-text">
+        {{note.entity}}
+      </span>
+      <span class="note-text">
+        {{note.message}}
+      </span>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>

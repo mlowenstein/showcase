@@ -36,7 +36,6 @@
     "mini-dash": "^0.2.0",
     "moment": "^2.22.2",
     "ng-http-loader": "^5.1.0",
-    "ng-lz-string": "^1.5.3",
     "ng-snotify": "^4.3.1",
     "ngx-api-utils": "^1.0.8",
     "rxjs": "^6.5.0",
