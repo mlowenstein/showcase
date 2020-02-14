@@ -11,6 +11,11 @@ import {
   HashLocationStrategy,
   LocationStrategy
 } from '@angular/common';
+import {
+  ThemeModule,
+  darkTheme,
+  defaultTheme,
+} from './themes';
 
 import {
   AppComponent,
@@ -74,6 +79,10 @@ const config: ExtraOptions = {
       useFactory: adapterFactory
     }),
     OAuthModule.forRoot(),
+    ThemeModule.forRoot({
+      themes: [defaultTheme, darkTheme],
+      active: 'default'
+    }),
   ],
   providers: [
     AppComponent,
