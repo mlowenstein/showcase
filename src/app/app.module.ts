@@ -1,3 +1,5 @@
+import 'hammerjs';
+
 import {
   CalendarModule,
   DateAdapter,

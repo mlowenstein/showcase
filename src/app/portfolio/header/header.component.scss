@@ -1,0 +1,52 @@
+mat-toolbar {
+  border-bottom: 1px solid #0065A4;
+  background-color: #0065A4;
+  height: 50px;
+  width: 100%;
+}
+
+.nav-left {
+  width: 50%;
+}
+
+.left-banner {
+  display: contents;
+  color: #fff;
+  float: left;
+}
+
+.nav-right {
+  width: 50%;
+}
+
+.right-banner {
+  color: #fff;
+  float: right;
+}
+
+.nav-links {
+  display: inline-flex;
+  font-size: large;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 5px;
+}
+
+a {
+  font-style: normal;
+  color: #fff;
+}
+
+a:hover {
+  color: #5DFF33;
+}
+
+a:active {
+  color: #06EC19;
+}
+
+mat-icon {
+  color: #fff;
+}
