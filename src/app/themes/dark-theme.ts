@@ -3,9 +3,10 @@ import { Theme } from './symbols';
 export const darkTheme: Theme = {
   name: 'dark',
   properties: {
-    '--backgroundColor': '#444',
-    '--toolbarColor': '#009dff',
-    '--toolbarFont': '#fff',
-    '--fontColor': '#DCDCDC'
+    '--charcoal': '#444444',
+    '--baseBlue': '#009dff',
+    '--basePurple': '#c806f9',
+    '--brightPurple': '#ac08fb',
+    '--offWhite': '#DCDCDC'
   }
 };

@@ -29,12 +29,6 @@ import {
   BrowserModule,
 } from '@angular/platform-browser';
 import {
-  FlexLayoutModule,
-} from '@angular/flex-layout';
-import {
-  HttpClientModule,
-} from '@angular/common/http';
-import {
   NgHttpLoaderModule,
 } from 'ng-http-loader';
 import {
@@ -73,8 +67,6 @@ const config: ExtraOptions = {
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, config),
     PortfolioModule,
-    HttpClientModule,
-    FlexLayoutModule,
     NgHttpLoaderModule,
     CalendarModule.forRoot({
       provide: DateAdapter,

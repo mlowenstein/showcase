@@ -8,5 +8,6 @@ export * from './login';
 export * from './notification';
 export * from './projects';
 export * from './references';
+export * from './sidebar';
 export * from './skills';
 export * from './welcome';

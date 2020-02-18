@@ -1,5 +1,7 @@
 import {
   Component,
+  EventEmitter,
+  Output,
 } from '@angular/core';
 
 @Component({
@@ -8,5 +10,9 @@ import {
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Output() toggling = new EventEmitter<boolean>();
 
+  toggleSidebar() {
+    this.toggling.emit(true);
+  }
 }

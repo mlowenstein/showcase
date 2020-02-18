@@ -20,11 +20,17 @@ import {
   ExperienceComponent,
 } from './experience';
 import {
+  FlexLayoutModule,
+} from '@angular/flex-layout';
+import {
   FooterComponent,
 } from './footer';
 import {
   HeaderComponent,
 } from './header';
+import {
+  HttpClientModule,
+} from '@angular/common/http';
 import {
   LoaderComponent,
 } from './loader';
@@ -50,6 +56,9 @@ import {
   ReferencesComponent,
 } from './references';
 import {
+  SidebarComponent,
+} from './sidebar';
+import {
   SkillsComponent,
 } from './skills';
 import {
@@ -69,6 +78,7 @@ import {
     PortfolioComponent,
     ProjectsComponent,
     ReferencesComponent,
+    SidebarComponent,
     SkillsComponent,
     WelcomeComponent,
   ],
@@ -76,6 +86,8 @@ import {
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    FlexLayoutModule,
     MaterialModule,
   ],
   exports: [
@@ -90,6 +102,7 @@ import {
     PortfolioComponent,
     ProjectsComponent,
     ReferencesComponent,
+    SidebarComponent,
     SkillsComponent,
     WelcomeComponent,
   ],

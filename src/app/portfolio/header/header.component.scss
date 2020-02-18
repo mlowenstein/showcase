@@ -19,7 +19,7 @@ mat-toolbar {
   width: 50%;
 }
 
-.right-banner {
+.links-menu {
   color: #fff;
   float: right;
 }
@@ -34,9 +34,14 @@ mat-toolbar {
   margin: 5px;
 }
 
-a {
+a.nav-item {
   font-style: normal;
   color: #fff;
+}
+
+a.menu-link {
+  font-style: normal;
+  color: #444;
 }
 
 a:hover {
@@ -49,4 +54,8 @@ a:active {
 
 mat-icon {
   color: #fff;
+}
+
+a.menu-link > mat-icon {
+  color: #444;
 }

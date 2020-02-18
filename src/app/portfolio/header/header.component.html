@@ -1,12 +1,13 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <button mat-icon-button (click)="toggleSidenav.emit()">
+    <button mat-icon-button fxHide.gt-sm
+      (click)="toggleSidebar()">
       <mat-icon>menu</mat-icon>
     </button>
     <span class="menu-spacer"></span>
     <div class="nav-left">
       <span class="left-banner">Portfolio</span>
-      <ul class="navbar-nav nav-links">
+      <ul class="navbar-nav nav-links" fxHide.lt-md>
         <li class="nav-item">
           <a class="nav-link smooth-scroll" href="#about'">About</a>
         </li>
@@ -28,7 +29,27 @@
       </ul>
     </div>
     <div class="nav-right">
-      <span class="right-banner">Links</span>
+      <button mat-button class="links-menu"
+        [matMenuTriggerFor]="menu">
+        Links
+      </button>
+      <mat-menu #menu matMenu="menu">
+        <button mat-menu-item>
+          <a class="menu-link" target="_blank" href="linkToGithub">
+            <mat-icon>github-circle</mat-icon> Github
+          </a>
+        </button>
+        <button mat-menu-item>
+          <a class="menu-link" target="_blank" href="linkToLinkedIn">
+            <mat-icon>linkedin-box</mat-icon> LinkedIn
+          </a>
+        </button>
+        <button mat-menu-item>
+          <a class="menu-link" target="_blank" href="linkToGmail">
+            <mat-icon>google-plus-box</mat-icon> G-Mail
+          </a>
+        </button>
+      </mat-menu>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
