@@ -53,3 +53,11 @@ export interface Project {
   frameworks: string[];
   screenshots?: string[];
 }
+
+export interface IconLink {
+  path: string;
+  name: string;
+  type?: string;
+  display?: string;
+  redirect?: string;
+}

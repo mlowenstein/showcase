@@ -30,25 +30,19 @@
     </div>
     <div class="nav-right">
       <button mat-button class="links-menu"
-        [matMenuTriggerFor]="menu">
-        Links
+        [matMenuTriggerFor]="menu"> Links
       </button>
       <mat-menu #menu matMenu="menu">
-        <button mat-menu-item>
-          <a class="menu-link" target="_blank" href="linkToGithub">
-            <mat-icon>github-circle</mat-icon> Github
-          </a>
-        </button>
-        <button mat-menu-item>
-          <a class="menu-link" target="_blank" href="linkToLinkedIn">
-            <mat-icon>linkedin-box</mat-icon> LinkedIn
-          </a>
-        </button>
-        <button mat-menu-item>
-          <a class="menu-link" target="_blank" href="linkToGmail">
-            <mat-icon>google-plus-box</mat-icon> G-Mail
-          </a>
-        </button>
+        <mat-nav-list>
+          <span *ngFor="let accountlink of accountLinks">
+            <a mat-list-item target="_blank"
+              href={{accountlink.redirect}}>
+              <mat-icon class="nav-link"
+                svgIcon="{{accountlink.name}}">
+              </mat-icon> {{accountlink.display}}
+            </a>
+          </span>
+        </mat-nav-list>
       </mat-menu>
     </div>
   </mat-toolbar-row>
