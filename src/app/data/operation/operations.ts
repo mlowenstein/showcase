@@ -34,7 +34,7 @@ export const unique = function(array: any[]): any[] {
  * depending on the level at which a hierarchy field is
  * is situated in the tree. */
 export const getSorted = function(prop: string) {
-  return function (a: any, b: any) {
+  return function(a: any, b: any) {
     if (a[prop] > b[prop]) { return 1; }
     if (a[prop] < b[prop]) { return -1; }
     return 0;

@@ -1,12 +1,17 @@
 <mat-toolbar>
   <mat-toolbar-row>
+    <span class="menu-spacer"></span>
     <button mat-icon-button fxHide.gt-sm
       (click)="toggleSidebar()">
       <mat-icon>menu</mat-icon>
     </button>
     <span class="menu-spacer"></span>
     <div class="nav-left">
-      <span class="left-banner">Portfolio</span>
+      <span class="left-banner">
+        <a class="head-link smooth-scroll"
+          href="#welcome">Portfolio
+        </a>
+      </span>
       <ul class="navbar-nav nav-links" fxHide.lt-md>
         <li class="nav-item">
           <a class="nav-link smooth-scroll"
@@ -50,6 +55,12 @@
               </mat-icon> {{accountlink.display}}
             </a>
           </span>
+<!--
+          <span *ngFor="let theme of themeOptions">
+            <button mat-list-item (click)="">
+            </button>
+          </span>
+-->
         </mat-nav-list>
       </mat-menu>
       <button mat-button class="opts-menu"

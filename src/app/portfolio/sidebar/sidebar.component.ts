@@ -19,6 +19,9 @@ import {
 import {
   MatSidenav,
 } from '@angular/material/sidenav';
+import {
+  getSorted,
+} from '../../data/operation';
 
 const logos = '../../../assets/icons/svg/';
 
@@ -46,10 +49,10 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.sidenav.opened = true;
+    this.navLinks.sort(getSorted('order'));
   }
 
   toggle() {
     this.sidenav.toggle();
   }
-
 }

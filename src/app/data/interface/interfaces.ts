@@ -58,6 +58,7 @@ export interface IconLink {
   path: string;
   name: string;
   type?: string;
+  order?: number;
   display?: string;
   redirect?: string;
 }

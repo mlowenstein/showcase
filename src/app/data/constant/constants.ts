@@ -84,6 +84,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     redirect: '#about',
     display: 'About',
+    order: 1,
   },
   {
     path: 'addfile.svg',
@@ -107,6 +108,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     redirect: '#projects',
     display: 'Projects',
+    order: 4,
   },
   {
     path: 'businessman.svg',
@@ -122,6 +124,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     display: 'Contact',
     redirect: '#contact',
+    order: 6,
   },
   {
     path: 'document.svg',
@@ -137,6 +140,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     redirect: '#experience',
     display: 'Experience',
+    order: 3,
   },
   {
     path: 'file.svg',
@@ -148,6 +152,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     redirect: '#skills',
     display: 'Skills',
+    order: 2,
   },
   {
     path: 'goal.svg',
@@ -163,6 +168,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     redirect: '#welcome',
     display: 'Home',
+    order: 0,
   },
   {
     path: 'info.svg',
@@ -242,6 +248,7 @@ export const ICONLINKS: IconLink[] = [
     type: 'navigation',
     redirect: '#references',
     display: 'References',
+    order: 5,
   },
   {
     path: 'website.svg',
