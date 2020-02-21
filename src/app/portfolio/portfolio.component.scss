@@ -1,3 +1,11 @@
-.portfolio-content {
-  margin: 15px;
+.sticky{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
+
+.content {
+  height: 200vh;
+}
+

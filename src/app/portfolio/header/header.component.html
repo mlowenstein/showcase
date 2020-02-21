@@ -9,30 +9,55 @@
       <span class="left-banner">Portfolio</span>
       <ul class="navbar-nav nav-links" fxHide.lt-md>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#about'">About</a>
+          <a class="nav-link smooth-scroll"
+            href="#about'">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#skills">Skills</a>
+          <a class="nav-link smooth-scroll"
+            href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#experience">Experience</a>
+          <a class="nav-link smooth-scroll"
+            href="#experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#projects">Projects</a>
+          <a class="nav-link smooth-scroll"
+            href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#references">References</a>
+          <a class="nav-link smooth-scroll"
+            href="#references">References</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+          <a class="nav-link smooth-scroll"
+            href="#contact">Contact</a>
         </li>
       </ul>
     </div>
     <div class="nav-right">
       <button mat-button class="links-menu"
-        [matMenuTriggerFor]="menu"> Links
+        [matMenuTriggerFor]="linksmenu">
+        <mat-icon svgIcon="share">
+        </mat-icon>
       </button>
-      <mat-menu #menu matMenu="menu">
+      <mat-menu #linksmenu matMenu="menu">
+        <mat-nav-list>
+          <span *ngFor="let accountlink of accountLinks">
+            <a mat-list-item target="_blank"
+              href={{accountlink.redirect}}>
+              <mat-icon class="nav-link"
+                svgIcon="{{accountlink.name}}">
+              </mat-icon> {{accountlink.display}}
+            </a>
+          </span>
+        </mat-nav-list>
+      </mat-menu>
+      <button mat-button class="opts-menu"
+        [matMenuTriggerFor]="optsmenu">
+        <mat-icon svgIcon="services">
+        </mat-icon>
+      </button>
+      <mat-menu #optsmenu matMenu="menu">
         <mat-nav-list>
           <span *ngFor="let accountlink of accountLinks">
             <a mat-list-item target="_blank"

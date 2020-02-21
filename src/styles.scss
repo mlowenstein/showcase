@@ -13,61 +13,6 @@ body {
   margin: 0;
 }
 
-main {
-  margin-top: 40px;
-}
-
-.app-frame {
-  margin-top: -55px;
-  background: #FFF;
-}
-
-.page-frame {
-  background: #FFF;
-}
-
-.warning-cover {
-  background-color: #444;
-}
-
-app-logger {
-  margin: 5px;
-}
-
-app-login {
-  position: fixed;
-  width: 100%;
-}
-
-app-create-tasks {
-  background: #FFF;
-}
-
-app-error-view {
-  background: #b0b0b0 !important;
-  height: 100vh;
-}
-
-app-focus-toolbar {
-  margin-top: 30px;
-}
-
-app-month-view {
-  background: #FFF;
-}
-
-app-weekday-view {
-  background: #FFF;
-}
-
-app-view-toolbar {
-  background: #FFF;
-}
-
-.view-toolbar mat-toolbar mat-toolbar-multiple-rows {
-  background: #FFF;
-}
-
 ::-webkit-scrollbar {
   width: 1px;
   display: none;

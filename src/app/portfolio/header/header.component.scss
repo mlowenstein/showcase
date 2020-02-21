@@ -6,27 +6,31 @@ mat-toolbar {
 }
 
 .nav-left {
-  width: 50%;
+  width: 60%;
 }
 
 .left-banner {
   display: contents;
-  color: #fff;
+  color: #ffffff;
   float: left;
 }
 
 .nav-right {
-  width: 50%;
+  width: 40%;
+}
+
+.opts-menu {
+  float: right;
 }
 
 .links-menu {
-  color: #fff;
+  color: #ffffff;
   float: right;
 }
 
 .nav-links {
   display: inline-flex;
-  font-size: large;
+  font-size: medium;
   list-style: none;
 }
 
@@ -36,12 +40,12 @@ mat-toolbar {
 
 a.nav-item {
   font-style: normal;
-  color: #fff;
+  color: #ffffff;
 }
 
 a.menu-link {
   font-style: normal;
-  color: #444;
+  color: #444444;
 }
 
 a:hover {
@@ -53,15 +57,16 @@ a:active {
 }
 
 mat-icon {
-  color: #fff;
+  color: #ffffff;
 }
 
 a.menu-link > mat-icon {
-  color: #444;
+  color: #444444;
 }
 
 .nav-link {
   margin-right: 5px;
+  color: #ffffff;
 }
 
 mat-nav-list {
