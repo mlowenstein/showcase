@@ -68,6 +68,14 @@ body {
     url('./assets/fonts/iconfont/MaterialIcons-Regular.ttf') format('truetype');
 }
 
+.mat-sidenav-content {
+  color: #ffffff;
+  background-image: url(assets/icons/background/vanishingstripes.svg);
+  height: 200vh;
+  padding: 40px;
+  margin: 0;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
